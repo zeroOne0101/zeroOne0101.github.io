@@ -239,8 +239,8 @@
             
               
                 
-                <a class="post-title-link" href="/2017/01/19/学习笔记—委托/" itemprop="url">
-                  未命名
+                <a class="post-title-link" href="/2017/01/20/学习笔记-委托/" itemprop="url">
+                  学习笔记-委托
                 </a>
               
             
@@ -253,8 +253,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-19T17:02:29+08:00" content="2017-01-19">
-              2017-01-19
+            <time itemprop="dateCreated" datetime="2017-01-20T13:41:37+08:00" content="2017-01-20">
+              2017-01-20
             </time>
           </span>
 
@@ -264,8 +264,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2017/01/19/学习笔记—委托/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/19/学习笔记—委托/" itemprop="commentsCount"></span>
+                <a href="/2017/01/20/学习笔记-委托/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/20/学习笔记-委托/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -290,8 +290,7 @@
       
         
           
-            <p>layout: _posts<br>title: 学习笔记-委托<br>date: 2017-01-20 11:48:02</p>
-<h2 id="tags-Hexo"><a href="#tags-Hexo" class="headerlink" title="tags: Hexo"></a>tags: Hexo</h2><h2 id="委托"><a href="#委托" class="headerlink" title="委托"></a>委托</h2><blockquote>
+            <h2 id="委托"><a href="#委托" class="headerlink" title="委托"></a>委托</h2><blockquote>
 <p>委托只是一种特殊类型的对象,其特殊之处在于,我们以前定义的所有对象都包含数据 ,而委托包含的只是一个或多个方法的地址</p>
 </blockquote>
 <p><strong>作用</strong>：传递方法</p>
@@ -301,17 +300,13 @@
 <h4 id="简单的委托示例"><a href="#简单的委托示例" class="headerlink" title="简单的委托示例"></a>简单的委托示例</h4><p><em>类1：Math0perations.cs</em></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">class Math0perations</div><div class="line">   &#123;</div><div class="line">       public static double MultiplyByTwo(double value)</div><div class="line">       &#123;</div><div class="line">           return value * 2;</div><div class="line">       &#125;</div><div class="line"></div><div class="line">       public static double Square(double value)</div><div class="line">       &#123;</div><div class="line">           return value * value;</div><div class="line">       &#125;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
 <p><em>类2：Program.cs</em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">	class Program</div><div class="line">    &#123;</div><div class="line">        delegate double DoubleOp(double x);</div><div class="line">        static void Main(string[] args)</div><div class="line">        &#123;</div><div class="line">            DoubleOp[] operations =</div><div class="line">            &#123;</div><div class="line">                Math0perations.MultiplyByTwo,</div><div class="line">                Math0perations.Square</div><div class="line">            &#125;;</div><div class="line"></div><div class="line">            for(int i=0;i&lt;operations.Length;i++)</div><div class="line">            &#123;</div><div class="line">                Console.WriteLine(&quot;Using Operations[&#123;0&#125;]&quot;, i);</div><div class="line">                ProcessAndDisplayNumber(operations[i], 2.0);</div><div class="line">                ProcessAndDisplayNumber(operations[i], 7.94);</div><div class="line">                ProcessAndDisplayNumber(operations[i], 1.414);</div><div class="line">            &#125;</div><div class="line">            Console.ReadLine();</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        static void ProcessAndDisplayNumber(DoubleOp action,double value)</div><div class="line">        &#123;</div><div class="line">            double result = action(value);</div><div class="line">            Console.WriteLine(&quot;Value is &#123;0&#125;,result of operation is &#123;1&#125;&quot;, value, result);</div><div class="line">        &#125;</div><div class="line">    &#125;  </div><div class="line">```  </div><div class="line"></div><div class="line">*输出结果：*</div></pre></td></tr></table></figure>
-<pre><code>Using Operations[0]
-Value is 2,result of operation is 4
-Value is 7.94,result of operation is 15.88
-Value is 1.414,result of operation is 2.828
-Using Operations[1]
-Value is 2,result of operation is 4
-Value is 7.94,result of operation is 63.0436
-Value is 1.414,result of operation is 1.999396
-</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">#### Action&lt;T&gt;和Func&lt;T&gt;委托  </div><div class="line">&gt; 泛型Action&lt;T&gt;委托表示引用一个void返回类型的方法。  </div><div class="line">Func&lt;T&gt;委托可以以类似的方式使用 。Func&lt;T&gt;允许调用带返回类型的方法  </div><div class="line"></div><div class="line">上面的示例改为以下代码，结果一样</div></pre></td></tr></table></figure>
-<pre><code>class Program
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">class Program</div><div class="line">   &#123;</div><div class="line">       delegate double DoubleOp(double x);</div><div class="line">       static void Main(string[] args)</div><div class="line">       &#123;</div><div class="line">           DoubleOp[] operations =</div><div class="line">           &#123;</div><div class="line">               Math0perations.MultiplyByTwo,</div><div class="line">               Math0perations.Square</div><div class="line">           &#125;;</div><div class="line"></div><div class="line">           for(int i=0;i&lt;operations.Length;i++)</div><div class="line">           &#123;</div><div class="line">               Console.WriteLine(&quot;Using Operations[&#123;0&#125;]&quot;, i);</div><div class="line">               ProcessAndDisplayNumber(operations[i], 2.0);</div><div class="line">               ProcessAndDisplayNumber(operations[i], 7.94);</div><div class="line">               ProcessAndDisplayNumber(operations[i], 1.414);</div><div class="line">           &#125;</div><div class="line">           Console.ReadLine();</div><div class="line">       &#125;</div><div class="line"></div><div class="line">       static void ProcessAndDisplayNumber(DoubleOp action,double value)</div><div class="line">       &#123;</div><div class="line">           double result = action(value);</div><div class="line">           Console.WriteLine(&quot;Value is &#123;0&#125;,result of operation is &#123;1&#125;&quot;, value, result);</div><div class="line">       &#125;</div><div class="line">   &#125;  </div><div class="line"></div><div class="line"></div><div class="line">输出结果：</div><div class="line">Using Operations[0]</div><div class="line">Value is 2,result of operation is 4</div><div class="line">Value is 7.94,result of operation is 15.88</div><div class="line">Value is 1.414,result of operation is 2.828</div><div class="line">Using Operations[1]</div><div class="line">Value is 2,result of operation is 4</div><div class="line">Value is 7.94,result of operation is 63.0436</div><div class="line">Value is 1.414,result of operation is 1.999396</div></pre></td></tr></table></figure>
+<h4 id="Action和Func委托"><a href="#Action和Func委托" class="headerlink" title="Action和Func委托"></a>Action<t>和Func<t>委托</t></t></h4><blockquote>
+<p>泛型Action<t>委托表示引用一个void返回类型的方法。<br>Func<t>委托可以以类似的方式使用 。Func<t>允许调用带返回类型的方法  </t></t></t></p>
+</blockquote>
+<p>上面的示例改为以下代码，结果一样  </p>
+<pre><code>
+class Program
 {
     delegate double DoubleOp(double x);
     static void Main(string[] args)
@@ -338,8 +333,7 @@ Value is 1.414,result of operation is 1.999396
         Console.WriteLine(&quot;Value is {0},result of operation is {1}&quot;, value, result);
     }
 }
-</code></pre><p>``` </p>
-
+</code></pre>
           
         
       
@@ -415,6 +409,13 @@ Value is 1.414,result of operation is 1.999396
 
           
 
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
