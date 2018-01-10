@@ -239,6 +239,113 @@
             
               
                 
+                <a class="post-title-link" href="/2018/01/10/WPF最小化托盘/" itemprop="url">
+                  未命名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2018-01-10T13:46:13+08:00" content="2018-01-10">
+              2018-01-10
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2018/01/10/WPF最小化托盘/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2018/01/10/WPF最小化托盘/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>layout: _post<br>title: WPF最小化托盘<br>date: 2018-01-10 14:41:37<br>tags: WPF</p>
+<h2 id="author-Paddy"><a href="#author-Paddy" class="headerlink" title="author: Paddy"></a>author: Paddy</h2><p> 今天百度了“WPF最小化托盘”，并没有找到合适的和自己想要的案例，后来谷歌到了一个简短且能实现的代码，在这做个记录。</p>
+<p><a href="https://stackoverflow.com/questions/10230579/easiest-way-to-have-a-program-minimize-itself-to-the-system-tray-using-net-4" target="_blank" rel="external">谷歌搜索后参考的文章</a></p>
+<p>效果演示：  </p>
+<p><img src="http://oiiwgugqz.bkt.clouddn.com/WPF%E6%9C%80%E5%B0%8F%E5%8C%96%E6%89%98%E7%9B%98.gif" alt="gif"></p>
+<p>  主要代码如下：  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">/// &lt;summary&gt;</div><div class="line">    /// Window1.xaml 的交互逻辑</div><div class="line">    /// &lt;/summary&gt;</div><div class="line">    public partial class Window1 : Window</div><div class="line">    &#123;</div><div class="line">        public Window1()</div><div class="line">        &#123;</div><div class="line">            InitializeComponent();</div><div class="line"></div><div class="line">            System.Windows.Forms.NotifyIcon ni = new System.Windows.Forms.NotifyIcon();</div><div class="line">            ni.Icon = new System.Drawing.Icon(@&quot;.\images\lupita.ico&quot;);</div><div class="line">            ni.Visible = true;</div><div class="line">            ni.DoubleClick +=</div><div class="line">                delegate (object sender, EventArgs args)</div><div class="line">                &#123;</div><div class="line">                    this.Show();</div><div class="line">                    this.WindowState = WindowState.Normal;</div><div class="line">                &#125;;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        protected override void OnStateChanged(EventArgs e)</div><div class="line">        &#123;</div><div class="line">            if (WindowState == System.Windows.WindowState.Minimized)</div><div class="line">                this.Hide();</div><div class="line"></div><div class="line">            base.OnStateChanged(e);</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2017/12/22/一篇MSSQL事务的测试文章/" itemprop="url">
                   一篇MSSQL事务的测试文章
                 </a>
@@ -611,7 +718,7 @@ class Program
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -658,7 +765,7 @@ class Program
         <div class="copyright" >
   
   &copy; 
-  <span itemprop="copyrightYear">2017</span>
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
