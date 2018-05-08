@@ -1,22 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 
 
 
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
 
 
 
@@ -34,38 +27,45 @@
 
 
 
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
 
   
   
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
 
 
 
 
 
 
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
+<link href="/css/main.css?v=5.0.2" rel="stylesheet" type="text/css" />
 
 
   <meta name="keywords" content="Hexo, NexT" />
@@ -73,6 +73,11 @@
 
 
 
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.2" />
 
 
 
@@ -91,85 +96,72 @@
 
 
 
-<script type="text/javascript" id="hexo.configurations">
+<script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    scheme: 'Mist',
+    sidebar: {"position":"left","display":"post"},
     fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    motion: true,
     duoshuo: {
       userId: '0',
       author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
   };
 </script>
 
 
 
+
   <link rel="canonical" href="http://blog.a23.wang/"/>
 
 
-
-
-
-  <title>黄培佳的博客</title>
-  
-
-
-
-
-
-
-
-
+  <title> 黄培佳的博客 </title>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="//schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+
+
+
+
+
+
 
   
   
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container one-collumn sidebar-position-left 
+   page-home 
+ ">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
+    <header id="header" class="header" itemscope itemtype="//schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
 
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">黄培佳的博客</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle"></p>
-      
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">黄培佳的博客</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
   </div>
+  <p class="site-subtitle"></p>
+</div>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
 </div>
 
 <nav class="site-nav">
@@ -190,11 +182,21 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+          <a href="/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
           </a>
         </li>
       
@@ -205,8 +207,6 @@
 
   
 </nav>
-
-
 
  </div>
     </header>
@@ -221,27 +221,13 @@
       
 
   
-
-  
-  
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.a23.wang/2018/05/07/目标计划及执行情况/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Paddy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="黄培佳的博客">
-    </span>
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -249,27 +235,27 @@
         
         
           <h1 class="post-title" itemprop="name headline">
+            
+            
+              
                 
-                <a class="post-title-link" href="/2018/05/07/目标计划及执行情况/" itemprop="url">目标计划及执行情况</a></h1>
+                <a class="post-title-link" href="/2018/05/07/目标计划及执行情况/" itemprop="url">
+                  目标计划及执行情况
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-05-07T11:09:57+08:00">
-                2018-05-07
-              </time>
-            
-
-            
-
-            
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2018-05-07T11:09:57+08:00" content="2018-05-07">
+              2018-05-07
+            </time>
           </span>
 
           
@@ -279,21 +265,16 @@
           
 
           
+
+          
           
 
           
-
-          
-
-          
-
         </div>
       </header>
     
 
-    
-    
-    
+
     <div class="post-body" itemprop="articleBody">
 
       
@@ -302,42 +283,45 @@
       
         
           
-            <table>
-<thead>
-<tr>
-<th>计划目标</th>
-<th style="text-align:center">掌握的程度</th>
-<th style="text-align:center">时间</th>
-<th style="text-align:right">完成情况</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>学习《C#高级编程》WPF章节</td>
-<td style="text-align:center">能用，会用</td>
-<td style="text-align:center">2018年5月7日~2018年5月13日</td>
-<td style="text-align:right">0</td>
-</tr>
-</tbody>
-</table>
+          
+
+
+计划目标
+掌握的程度
+时间
+完成情况
+
+
+
+
+学习《C#高级编程》WPF章节
+能用，会用
+2018年5月7日~2018年5月13日
+0
+
+
+
 
           
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2018/05/07/目标计划及执行情况/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
-
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
-      
-
       
 
       
@@ -347,10 +331,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -358,27 +338,13 @@
       
 
   
-
-  
-  
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.a23.wang/2018/01/10/WPF最小化托盘/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Paddy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="黄培佳的博客">
-    </span>
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -386,27 +352,27 @@
         
         
           <h1 class="post-title" itemprop="name headline">
+            
+            
+              
                 
-                <a class="post-title-link" href="/2018/01/10/WPF最小化托盘/" itemprop="url">WPF最小化托盘</a></h1>
+                <a class="post-title-link" href="/2018/01/10/WPF最小化托盘/" itemprop="url">
+                  WPF最小化托盘
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-10T14:41:37+08:00">
-                2018-01-10
-              </time>
-            
-
-            
-
-            
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2018-01-10T14:41:37+08:00" content="2018-01-10">
+              2018-01-10
+            </time>
           </span>
 
           
@@ -416,21 +382,16 @@
           
 
           
+
+          
           
 
           
-
-          
-
-          
-
         </div>
       </header>
     
 
-    
-    
-    
+
     <div class="post-body" itemprop="articleBody">
 
       
@@ -439,30 +400,32 @@
       
         
           
-            <p>今天百度了“WPF最小化托盘”，并没有找到合适的和自己想要的案例，后来谷歌到了一个简短且能实现的代码，在这做个记录。</p>
-<p><a href="https://stackoverflow.com/questions/10230579/easiest-way-to-have-a-program-minimize-itself-to-the-system-tray-using-net-4" target="_blank" rel="external">谷歌搜索后参考的文章</a></p>
-<p>效果演示：  </p>
-<p><img src="http://oiiwgugqz.bkt.clouddn.com/WPF%E6%9C%80%E5%B0%8F%E5%8C%96%E6%89%98%E7%9B%98.gif" alt="gif"></p>
-<p>  主要代码如下：  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">/// &lt;summary&gt;</div><div class="line">    /// Window1.xaml 的交互逻辑</div><div class="line">    /// &lt;/summary&gt;</div><div class="line">    public partial class Window1 : Window</div><div class="line">    &#123;</div><div class="line">        public Window1()</div><div class="line">        &#123;</div><div class="line">            InitializeComponent();</div><div class="line"></div><div class="line">            System.Windows.Forms.NotifyIcon ni = new System.Windows.Forms.NotifyIcon();</div><div class="line">            ni.Icon = new System.Drawing.Icon(@&quot;.\images\lupita.ico&quot;);</div><div class="line">            ni.Visible = true;</div><div class="line">            ni.DoubleClick +=</div><div class="line">                delegate (object sender, EventArgs args)</div><div class="line">                &#123;</div><div class="line">                    this.Show();</div><div class="line">                    this.WindowState = WindowState.Normal;</div><div class="line">                &#125;;</div><div class="line">        &#125;</div><div class="line"></div><div class="line">        protected override void OnStateChanged(EventArgs e)</div><div class="line">        &#123;</div><div class="line">            if (WindowState == System.Windows.WindowState.Minimized)</div><div class="line">                this.Hide();</div><div class="line"></div><div class="line">            base.OnStateChanged(e);</div><div class="line">        &#125;</div><div class="line">    &#125;</div></pre></td></tr></table></figure>
+          今天百度了“WPF最小化托盘”，并没有找到合适的和自己想要的案例，后来谷歌到了一个简短且能实现的代码，在这做个记录。
+谷歌搜索后参考的文章
+效果演示：  
 
-          
+  主要代码如下：  
+12345678910111213141516171819202122232425262728/// &lt;summ
+          ...
+
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2018/01/10/WPF最小化托盘/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
-
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
-      
-
       
 
       
@@ -472,10 +435,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -483,27 +442,13 @@
       
 
   
-
-  
-  
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.a23.wang/2017/12/22/一篇MSSQL事务的测试文章/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Paddy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="黄培佳的博客">
-    </span>
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -511,27 +456,27 @@
         
         
           <h1 class="post-title" itemprop="name headline">
+            
+            
+              
                 
-                <a class="post-title-link" href="/2017/12/22/一篇MSSQL事务的测试文章/" itemprop="url">一篇MSSQL事务的测试文章</a></h1>
+                <a class="post-title-link" href="/2017/12/22/一篇MSSQL事务的测试文章/" itemprop="url">
+                  一篇MSSQL事务的测试文章
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-22T14:41:37+08:00">
-                2017-12-22
-              </time>
-            
-
-            
-
-            
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-12-22T14:41:37+08:00" content="2017-12-22">
+              2017-12-22
+            </time>
           </span>
 
           
@@ -541,21 +486,16 @@
           
 
           
+
+          
           
 
           
-
-          
-
-          
-
         </div>
       </header>
     
 
-    
-    
-    
+
     <div class="post-body" itemprop="articleBody">
 
       
@@ -564,31 +504,28 @@
       
         
           
-            <h3 id="常用存储过程事务的基本结构"><a href="#常用存储过程事务的基本结构" class="headerlink" title="常用存储过程事务的基本结构"></a>常用存储过程事务的基本结构</h3><p><a href="https://www.cnblogs.com/knowledgesea/p/3714417.html" target="_blank" rel="external">参考了该文章</a>  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">---开启事务</div><div class="line">begin tran</div><div class="line">--错误扑捉机制，看好啦，这里也有的。并且可以嵌套。</div><div class="line">begin try  </div><div class="line">   --这里面写执行语句</div><div class="line">   select * from dbo.i_UserWorkType</div><div class="line">end try</div><div class="line">begin catch</div><div class="line">   if(@@trancount&gt;0) --全局变量@@trancount，事务开启此值+1，他用来判断是有开启事务</div><div class="line">      rollback tran  ---由于出错，这里回滚到开始，第一条语句也没有插入成功。</div><div class="line">end catch</div><div class="line">if(@@trancount&gt;0)</div><div class="line">commit tran  --提交事务</div></pre></td></tr></table></figure>
-<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>在此做一个测试，分别进行增删改，看能否正常回滚<br>未做执行前，进行的查询结果<br><img src="http://oiiwgugqz.bkt.clouddn.com/%E4%B8%80%E7%AF%87MSSQL%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A001.png" alt="image"></p>
-<h4 id="准备执行的语句-："><a href="#准备执行的语句-：" class="headerlink" title="准备执行的语句 ："></a>准备执行的语句 ：</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">---开启事务</div><div class="line">begin tran</div><div class="line">--错误扑捉机制，看好啦，这里也有的。并且可以嵌套。</div><div class="line">begin try  </div><div class="line">   ----------------------</div><div class="line">   --这三条都是正确的语句</div><div class="line">   ----------------------</div><div class="line">   --增</div><div class="line">   INSERT INTO dbo.i_UserWorkType(UserNo,Calendar,WorkType,UserName,WorkTime,ChangeTime)</div><div class="line">   VALUES(&apos;0309110122&apos;,&apos;2017-12-22&apos;,&apos;B&apos;,&apos;杨沫&apos;,&apos;8:30~17:30&apos;,GETDATE())</div><div class="line">   </div><div class="line">   --删除UserNo为0309110119和WorkType为B的这条数据</div><div class="line">   DELETE dbo.i_UserWorkType</div><div class="line">   WHERE UserNo=&apos;0309110119&apos; AND WorkType=&apos;B&apos;</div><div class="line">   </div><div class="line">   --更改数据为“李某”为“李某某”</div><div class="line">   UPDATE dbo.i_UserWorkType</div><div class="line">   SET UserName=&apos;李某某&apos;</div><div class="line">   WHERE UserName=&apos;李某&apos;</div><div class="line">   </div><div class="line">   ---------------------</div><div class="line">   --这一条是错误的语句</div><div class="line">   ---------------------</div><div class="line">   INSERT INTO dbo.i_UserWorkType(ChangeTime)</div><div class="line">   VALUES(&apos;不是时间格式&apos;)</div><div class="line">   </div><div class="line">end try</div><div class="line">begin catch</div><div class="line">   if(@@trancount&gt;0) --全局变量@@trancount，事务开启此值+1，他用来判断是有开启事务</div><div class="line">      rollback tran  ---由于出错，这里回滚到开始，第一条语句也没有插入成功。</div><div class="line">end catch</div><div class="line">if(@@trancount&gt;0)</div><div class="line">commit tran  --提交事务</div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line">select * from dbo.i_UserWorkType</div></pre></td></tr></table></figure>
-<h4 id="执行后的结果为："><a href="#执行后的结果为：" class="headerlink" title="执行后的结果为："></a>执行后的结果为：</h4><p><img src="http://oiiwgugqz.bkt.clouddn.com/%E4%B8%80%E7%AF%87MSSQL%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A002.png" alt="image"><br>与未执行前结果一样<br>那我们把事务去掉后，只执行Try里的语句结果会怎样呢  </p>
-<h4 id="结果："><a href="#结果：" class="headerlink" title="结果："></a>结果：</h4><p><img src="http://oiiwgugqz.bkt.clouddn.com/%E4%B8%80%E7%AF%87MSSQL%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A003.png" alt="image"><br><img src="http://oiiwgugqz.bkt.clouddn.com/%E4%B8%80%E7%AF%87MSSQL%E4%BA%8B%E5%8A%A1%E7%9A%84%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A004.png" alt="image"><br>成功地增加了一条叫“杨沫”的数据<br>成功地删除了UserNo为“0309110119”和WorkType为“B”的数据<br>成功地更改了“李某”的数据，改成了“李某某”  </p>
-<h4 id="结论："><a href="#结论：" class="headerlink" title="结论："></a>结论：</h4><p>这事务是有效的，并且所做的增删改都能进行回滚</p>
+          常用存储过程事务的基本结构参考了该文章  
+12345678910111213---开启事务begin tran--错误扑捉机制，看好啦，这里也有的。并且可以嵌套。begin try     --这里面写执行语句   select * from dbo.i_UserWorkTypeend trybe
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/12/22/一篇MSSQL事务的测试文章/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
-
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
-      
-
       
 
       
@@ -598,10 +535,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -609,27 +542,13 @@
       
 
   
-
-  
-  
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.a23.wang/2017/12/20/从今天开始就用Markdown写作/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Paddy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="黄培佳的博客">
-    </span>
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -637,27 +556,27 @@
         
         
           <h1 class="post-title" itemprop="name headline">
+            
+            
+              
                 
-                <a class="post-title-link" href="/2017/12/20/从今天开始就用Markdown写作/" itemprop="url">从今天开始就用Markdown写作</a></h1>
+                <a class="post-title-link" href="/2017/12/20/从今天开始就用Markdown写作/" itemprop="url">
+                  从今天开始就用Markdown写作
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-20T14:41:37+08:00">
-                2017-12-20
-              </time>
-            
-
-            
-
-            
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-12-20T14:41:37+08:00" content="2017-12-20">
+              2017-12-20
+            </time>
           </span>
 
           
@@ -667,21 +586,16 @@
           
 
           
+
+          
           
 
           
-
-          
-
-          
-
         </div>
       </header>
     
 
-    
-    
-    
+
     <div class="post-body" itemprop="articleBody">
 
       
@@ -690,26 +604,27 @@
       
         
           
-            <p>Markdown 从之前就有了解，可以很方便于写作，通过一些简单的符号，设置不同的漂亮的适合写作的样式。但可能比较麻烦的就是图片的插入啦，需要找个地方上传，生成链接或者是本地路径，但只能本地查看。网上也有很多插件可以对图片进行上传，有需要的可以自己百度。<br>另外，今天发现Markdown真的很强大，还可以方便的生成图表，如流程图、甘特图等以及生成数学公式，真的太强大了。<br>以下记了几个对Markdown讲解的链接，这里做记录，方便自己以后对相关语法的查看<br><a href="http://note.youdao.com/iyoudao/?p=2411" target="_blank" rel="external">【简明版】有道云笔记Markdown指南</a>  </p>
-<p><a href="http://note.youdao.com/iyoudao/?p=2445" target="_blank" rel="external">【进阶版】有道云笔记Markdown指南</a></p>
+          Markdown 从之前就有了解，可以很方便于写作，通过一些简单的符号，设置不同的漂亮的适合写作的样式。但可能比较麻烦的就是图片的插入啦，需要找个地方上传，生成链接或者是本地路径，但只能本地查看。网上也有很多插件可以对图片进行上传，有需要的可以自己百度。另外，今天发现Markdown真的很强大，还可
+          ...
 
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/12/20/从今天开始就用Markdown写作/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
-
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
-      
-
       
 
       
@@ -719,10 +634,6 @@
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -730,27 +641,13 @@
       
 
   
-
-  
-  
   
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://blog.a23.wang/2017/01/20/学习笔记-委托/">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Paddy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="黄培佳的博客">
-    </span>
+  <article class="post post-type-normal " itemscope itemtype="//schema.org/Article">
 
     
       <header class="post-header">
@@ -758,27 +655,27 @@
         
         
           <h1 class="post-title" itemprop="name headline">
+            
+            
+              
                 
-                <a class="post-title-link" href="/2017/01/20/学习笔记-委托/" itemprop="url">学习笔记-委托</a></h1>
+                <a class="post-title-link" href="/2017/01/20/学习笔记-委托/" itemprop="url">
+                  学习笔记-委托
+                </a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-01-20T13:41:37+08:00">
-                2017-01-20
-              </time>
-            
-
-            
-
-            
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-01-20T13:41:37+08:00" content="2017-01-20">
+              2017-01-20
+            </time>
           </span>
 
           
@@ -788,21 +685,16 @@
           
 
           
+
+          
           
 
           
-
-          
-
-          
-
         </div>
       </header>
     
 
-    
-    
-    
+
     <div class="post-body" itemprop="articleBody">
 
       
@@ -811,67 +703,31 @@
       
         
           
-            <h2 id="委托"><a href="#委托" class="headerlink" title="委托"></a>委托</h2><blockquote>
-<p>委托只是一种特殊类型的对象,其特殊之处在于,我们以前定义的所有对象都包含数据 ,而委托包含的只是一个或多个方法的地址</p>
-</blockquote>
-<p><strong>作用</strong>：传递方法</p>
-<h4 id="声明委托"><a href="#声明委托" class="headerlink" title="声明委托"></a>声明委托</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">//定义委托的语法如下  </div><div class="line">    delegate void IntMethodInvoker(int x);  </div><div class="line">//在这个示例中,定义了一个委托 IntMethodInvoker,    </div><div class="line">//并指定该委托的每个实例都可以包含一个方法的引用,该方法带有一个int参数 ,并返回void。</div></pre></td></tr></table></figure>
-<p>定义好委托后,就可以创建它的一个实例，所创建的委托<br>的实例仍称为委托。</p>
-<h4 id="使用委托"><a href="#使用委托" class="headerlink" title="使用委托"></a>使用委托</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">private delegate string GetAString();</div><div class="line">//以下两端代码等同</div><div class="line">1.GetAString  firstStringMethod=new GetAString(x.ToString);</div><div class="line">2.GetAString  firstStringMethod=x.ToString;</div></pre></td></tr></table></figure>
-<h4 id="简单的委托示例"><a href="#简单的委托示例" class="headerlink" title="简单的委托示例"></a>简单的委托示例</h4><p><em>类1：Math0perations.cs</em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">class Math0perations</div><div class="line">   &#123;</div><div class="line">       public static double MultiplyByTwo(double value)</div><div class="line">       &#123;</div><div class="line">           return value * 2;</div><div class="line">       &#125;</div><div class="line"></div><div class="line">       public static double Square(double value)</div><div class="line">       &#123;</div><div class="line">           return value * value;</div><div class="line">       &#125;</div><div class="line">   &#125;</div></pre></td></tr></table></figure>
-<p><em>类2：Program.cs</em></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">class Program</div><div class="line">   &#123;</div><div class="line">       delegate double DoubleOp(double x);</div><div class="line">       static void Main(string[] args)</div><div class="line">       &#123;</div><div class="line">           DoubleOp[] operations =</div><div class="line">           &#123;</div><div class="line">               Math0perations.MultiplyByTwo,</div><div class="line">               Math0perations.Square</div><div class="line">           &#125;;</div><div class="line"></div><div class="line">           for(int i=0;i&lt;operations.Length;i++)</div><div class="line">           &#123;</div><div class="line">               Console.WriteLine(&quot;Using Operations[&#123;0&#125;]&quot;, i);</div><div class="line">               ProcessAndDisplayNumber(operations[i], 2.0);</div><div class="line">               ProcessAndDisplayNumber(operations[i], 7.94);</div><div class="line">               ProcessAndDisplayNumber(operations[i], 1.414);</div><div class="line">           &#125;</div><div class="line">           Console.ReadLine();</div><div class="line">       &#125;</div><div class="line"></div><div class="line">       static void ProcessAndDisplayNumber(DoubleOp action,double value)</div><div class="line">       &#123;</div><div class="line">           double result = action(value);</div><div class="line">           Console.WriteLine(&quot;Value is &#123;0&#125;,result of operation is &#123;1&#125;&quot;, value, result);</div><div class="line">       &#125;</div><div class="line">   &#125;  </div><div class="line"></div><div class="line"></div><div class="line">输出结果：</div><div class="line">Using Operations[0]</div><div class="line">Value is 2,result of operation is 4</div><div class="line">Value is 7.94,result of operation is 15.88</div><div class="line">Value is 1.414,result of operation is 2.828</div><div class="line">Using Operations[1]</div><div class="line">Value is 2,result of operation is 4</div><div class="line">Value is 7.94,result of operation is 63.0436</div><div class="line">Value is 1.414,result of operation is 1.999396</div></pre></td></tr></table></figure>
-<h4 id="Action和Func委托"><a href="#Action和Func委托" class="headerlink" title="Action和Func委托"></a>Action<t>和Func<t>委托</t></t></h4><blockquote>
-<p>泛型Action<t>委托表示引用一个void返回类型的方法。<br>Func<t>委托可以以类似的方式使用 。Func<t>允许调用带返回类型的方法  </t></t></t></p>
-</blockquote>
-<p>上面的示例改为以下代码，结果一样  </p>
-<pre><code>
-class Program
-{
-    delegate double DoubleOp(double x);
-    static void Main(string[] args)
-    {
-        Func&lt;double,double&gt;[] operations =
-        {
-            Math0perations.MultiplyByTwo,
-            Math0perations.Square
-        };
+          委托
+委托只是一种特殊类型的对象,其特殊之处在于,我们以前定义的所有对象都包含数据 ,而委托包含的只是一个或多个方法的地址
 
-        for(int i=0;i&lt;operations.Length;i++)
-        {
-            Console.WriteLine(&quot;Using Operations[{0}]&quot;, i);
-            ProcessAndDisplayNumber(operations[i], 2.0);
-            ProcessAndDisplayNumber(operations[i], 7.94);
-            ProcessAndDisplayNumber(operations[i], 1.414);
-        }
-        Console.ReadLine();
-    }
+作用：传递方法
+声明委托1234//定义委托的语法如下      delegate void IntMethodInvoker(int x);  //在这个示例中,定义了一个
+          ...
 
-    static void ProcessAndDisplayNumber(Func&lt;double,double&gt; action,double value)
-    {
-        double result = action(value);
-        Console.WriteLine(&quot;Value is {0},result of operation is {1}&quot;, value, result);
-    }
-}
-</code></pre>
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/01/20/学习笔记-委托/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
-    
-    
-    
 
-    
+    <div>
+      
+    </div>
 
-    
-
-    
+    <div>
+      
+    </div>
 
     <footer class="post-footer">
-      
-
       
 
       
@@ -881,10 +737,6 @@ class Program
         <div class="post-eof"></div>
       
     </footer>
-  </div>
-  
-  
-  
   </article>
 
 
@@ -913,65 +765,54 @@ class Program
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
     <div class="sidebar-inner">
 
       
 
       
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">Paddy</p>
-              <p class="site-description motion-element" itemprop="description">改变不是一朝一夕之事，需要的是每天的坚持。</p>
+      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="//schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/1.jpg"
+               alt="Paddy" />
+          <p class="site-author-name" itemprop="name">Paddy</p>
+          <p class="site-description motion-element" itemprop="description">改变不是一朝一夕之事，需要的是每天的坚持。</p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
           </div>
 
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">5</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
           
 
           
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
 
-          
-          
+        </nav>
 
-          
-          
+        
 
+        <div class="links-of-author motion-element">
           
-
         </div>
-      </section>
 
-      
+        
+        
+
+        
+        
+
+      </section>
 
       
 
@@ -985,50 +826,40 @@ class Program
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright" >
+  
+  &copy;  2017 - 
+  <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Paddy</span>
-
-  
 </div>
 
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+<div class="powered-by">
+   <a class="theme-link" href="https://coding.net/pages/">Hosted by Coding Pages</a>
+</div>
 
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
-
-
-
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
 
         
-
-
-
-
-
-
 
         
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
   </div>
 
   
@@ -1051,52 +882,31 @@ class Program
 
 
 
-
-
-
-
-
-
-
-
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
   
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.2"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.2"></script>
 
 
 
@@ -1108,21 +918,7 @@ class Program
   
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.2"></script>
 
 
 
@@ -1130,32 +926,10 @@ class Program
 
 
 
-
-
   
 
 
 
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
 
   
   
@@ -1165,6 +939,9 @@ class Program
   
 
   
+<script type="text/javascript" async src="//push.zhanzhang.baidu.com/push.js">
+</script>
+
 
 </body>
 </html>
